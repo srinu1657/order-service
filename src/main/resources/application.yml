@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: order-service
+  config:
+    import: configserver:http://localhost:8080
+
+server:
+  port: 8082
+
+logging:
+  level:
+    root: DEBUG
